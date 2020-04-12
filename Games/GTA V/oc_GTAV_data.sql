@@ -2,7 +2,7 @@
 -- Dumping data for table `colors`
 --
 
-INSERT INTO `cvfddj_colors` (`id`, `colorGorup`, `colorName`) VALUES
+INSERT INTO `<DB_PREFIX>colors` (`id`, `colorGroup`, `colorName`) VALUES
 (1, 'Chrome', 'Chrome'),
 (2, 'Classic', 'Black'),
 (3, 'Classic', 'Carbon Black'),
@@ -252,11 +252,30 @@ INSERT INTO `cvfddj_colors` (`id`, `colorGorup`, `colorName`) VALUES
 (247, 'Pearlescent', 'Ice White'),
 (248, 'Pearlescent', 'Frost White');
 
+
+---
+--- Dumping data for table `citation_types
+---
+
+INSERT INTO `<DB_PREFIX>citationTypes` (`citationId`, `citationDescription`, `citationFine`) VALUES
+(1, 'Felony Hit and Run', 400),
+(2, 'Hit and Run', 300),
+(3, 'Reckless Driving', 200),
+(4, 'Failure to Yield', 300),
+(5, 'Obstruction of Traffic', 200),
+(6, 'Speeding', 200),
+(7, 'Failure to Signal', 300),
+(8, 'Failure to Signal at a Stop Light', 200),
+(9, 'Failure to Signal at a Stop Sign', 200),
+(10, 'Compromised Safety during Lane Change', 150),
+(11, 'Illegal Parking', 150),
+(12, 'Driving without Headlights Active when appropriate', 150);
+
 --
 -- Dumping data for table `departments`
 --
 
-INSERT INTO `cvfddj_departments` (`departmentId`, `departmentName`, `departmentShortName`, `departmentLongName`, `departmentEnabled`) VALUES
+INSERT INTO `<DB_PREFIX>departments` (`departmentId`, `departmentName`, `departmentShortName`, `departmentLongName`, `allowDepartment`) VALUES
 (1, 'Communications', 'SAECOMM', 'San Andreas Emergency Communications', 0),
 (2, 'State', 'SASP', 'San Andreas State Police', 0),
 (3, 'Highway', 'SAHP', 'San Andreas Highway Patrol', 0),
@@ -271,27 +290,92 @@ INSERT INTO `cvfddj_departments` (`departmentId`, `departmentName`, `departmentS
 -- Dumping data for table `incident_types`
 --
 
-INSERT INTO `cvfddj_incident_types` (`codeId`, `codeName`) VALUES
-('68', 'Armed Robbery'),
-('25', 'Domestic Dispute'),
-('10', 'Fight in Progress'),
-('49', 'Homicide'),
-('55', 'Intoxicated Driver'),
-('56', 'Intoxicated Person'),
-('62', 'Kidnapping'),
-('66', 'Reckless Driver'),
-('13', 'Shots Fired'),
-('16', 'Stolen Vehicle'),
-('17', 'Suspicious Person'),
-('11', 'Traffic Stop'),
-('50', 'Vehicle Accident'),
-('200', 'Tow & Recovery');
+INSERT INTO `<DB_PREFIX>incidentTypes` (`codeId`, `codeName`) VALUES
+('10-0', 'Use Caution'),
+('10-1', 'Signal Weak'),
+('10-2', 'Signal Good'),
+('10-3', 'Stop Transmitting'),
+('10-4', 'Acknowledged'),
+('10-5', 'Relay To/From'),
+('10-6', 'Busy'),
+('10-7', 'Out of Service'),
+('10-8', 'In Service'),
+('10-9', 'Repeat'),
+('10-10', 'Negative'),
+('10-11', 'On Duty'),
+('10-12', 'Stand By'),
+('10-13', 'Weather Conditions'),
+('10-14', 'Message/Information'),
+('10-15', 'Message Delivered'),
+('10-16', 'Reply to Message'),
+('10-17', 'En-route'),
+('10-18', 'Urgent'),
+('10-19', 'In Contact'),
+('10-20', 'Location'),
+('10-21', 'Call by Phone'),
+('10-22', 'Disregard'),
+('10-23', 'Arrived at Scene'),
+('10-24', 'Assignment Completed'),
+('10-25', 'Report To'),
+('10-26', 'ETA'),
+('10-27', 'License/Permit Information'),
+('10-28', 'Vehicle Information'),
+('10-29', 'Records Check'),
+('10-30', 'Caution / Danger'),
+('10-31', 'Pick Up'),
+('10-32', 'Additional Units Needed (Specify Number Needed)'),
+('10-33', 'Need Immediate Assistance'),
+('10-34', 'Current Time'),
+('10-40', 'Fight in Progress'),
+('10-41', 'Beginning Tour of Duty'),
+('10-42', 'Ending Tour of Duty'),
+('10-43', 'Fire Alarm'),
+('10-44', 'Riot'),
+('10-45', 'Bomb Threat'),
+('10-46', 'Bank Alarm'),
+('10-47', 'Complete Assignment Quickly'),
+('10-48', 'Expedite Subject'),
+('10-49', 'Drag Racing'),
+('10-50', 'Vehicle Accident'),
+('10-51', 'Dispatch Wrecker'),
+('10-52', 'Dispatch Ambulance'),
+('10-53', 'Road Blocked'),
+('10-54', 'Hit and Run Accident'),
+('10-55', 'Intoxicated Driver'),
+('10-56', 'Intoxicated Pedestrian'),
+('10-57', 'Request BT Operator'),
+('10-58', 'Direct Traffic'),
+('10-59', 'Escort'),
+('10-60', 'Suspicious Vehicle'),
+('10-61', 'Stopping Suspicious Vehicle'),
+('10-62', 'B and E In Progress'),
+('10-63', 'Prepare to Receive Assignment'),
+('10-64', 'Crime in Progress'),
+('10-65', 'Armed Robbery'),
+('10-66', 'Notify Med Examiner'),
+('10-67', 'Report of Death'),
+('10-68', 'Livestock in Roadway'),
+('10-69', 'Advise Telephone Number'),
+('10-70', 'Improperly Parked Vehicle'),
+('10-71', 'Improper Use of Radio'),
+('10-72', 'Prisoner in Custody'),
+('10-73', 'Mental Subject'),
+('10-74', 'Prison Break'),
+('10-75', 'Wanted or Stolen'),
+('10-76', 'Prowler'),
+('10-77', 'Direct Traffic at Fire Scene'),
+('10-80', 'In Pursuit'),
+('10-81', 'Nature of Fire'),
+('10-82', 'Fire in Progress'),
+('10-83', 'Smoke Visible'),
+('10-84', 'No Smoke Visible');
+
 
 --
 -- Dumping data for table `statuses`
 --
 
-INSERT INTO `cvfddj_statuses` (`statusId`, `statusText`) VALUES
+INSERT INTO `<DB_PREFIX>statuses` (`statusId`, `statusText`) VALUES
 (1, '10-8 | Available'),
 (2, '10-6 | Busy'),
 (3, '10-7 | Unavailable | On Call'),
@@ -305,7 +389,7 @@ INSERT INTO `cvfddj_statuses` (`statusId`, `statusText`) VALUES
 -- Dumping data for table `streets`
 --
 
-INSERT INTO `cvfddj_streets` (`id`, `name`, `county`) VALUES
+INSERT INTO `<DB_PREFIX>streets` (`id`, `name`, `county`) VALUES
 	(1, 'Abattoir Avenue', 'Los Santos County'),
 	(2, 'Abe Milton Parkway', 'Los Santos County'),
 	(3, 'Ace Jones Drive', 'Los Santos County'),
@@ -2260,7 +2344,7 @@ INSERT INTO `cvfddj_streets` (`id`, `name`, `county`) VALUES
 -- Dumping data for table `tones`
 --
 
-INSERT INTO `cvfddj_tones` (`id`, `name`, `active`) VALUES
+INSERT INTO `<DB_PREFIX>tones` (`id`, `name`, `active`) VALUES
 (1, 'priority', '0'),
 (2, 'recurring', '0'),
 (3, 'panic', '0');
@@ -2269,7 +2353,7 @@ INSERT INTO `cvfddj_tones` (`id`, `name`, `active`) VALUES
 -- Dumping data for table `vehicles`
 --
 
-INSERT INTO `cvfddj_vehicles` (`id`, `Make`, `Model`) VALUES
+INSERT INTO `<DB_PREFIX>vehicles` (`id`, `make`, `model`) VALUES
   (1, 'Albany', 'Alpha'),
   (2, 'Albany', 'Buccaneer'),
   (3, 'Albany', 'Buccaneer Custom'),
@@ -2773,7 +2857,7 @@ INSERT INTO `cvfddj_vehicles` (`id`, `Make`, `Model`) VALUES
 -- Dumping data for table `weapons`
 --
 
-INSERT INTO `cvfddj_weapons` (`id`, `weaponType`, `weaponName`) VALUES
+INSERT INTO `<DB_PREFIX>weapons` (`id`, `weaponType`, `weaponName`) VALUES
 (1, 'Vom Feuer', 'Advanced Rifle'),
 (2, 'Shrewsbury', 'Assault Rifle'),
 (3, 'Shrewsbury', 'Assault Rifle MKII'),
@@ -2863,7 +2947,7 @@ INSERT INTO `cvfddj_weapons` (`id`, `weaponType`, `weaponName`) VALUES
 (87, 'Throwable', 'Snowball'),
 (88, 'Throwable', 'Pipe Bomb');
 
-INSERT INTO `cvfddj_radio_codes` (`id`, `code`, `codeDescription`, `onCall`) VALUES
+INSERT INTO `<DB_PREFIX>radioCodes` (`id`, `code`, `codeDescription`, `onCall`) VALUES
 (1, '10-8',			'Available', 2),
 (2, '10-6',			'Busy', 1),
 (3, '10-7C',		'Unavailable | On Call', 1),
@@ -2872,3 +2956,13 @@ INSERT INTO `cvfddj_radio_codes` (`id`, `code`, `codeDescription`, `onCall`) VAL
 (6, '10-7U',		'Unavailable', 1),
 (7, '10-23',		'Arrived on Scene', 1),
 (8, '10-65',		'Transporting Prisoner', 1);
+
+INSERT INTO `<DB_PREFIX>patrolinformation` (`key`, `value`) VALUES
+('areaOfPatrol',	''),
+('communicationsSupervisor',	''),
+('stateSupervisor',	''),
+('sheriffsSupervisor',	''),
+('policeSupervisor',	''),
+('fireSupervisor',	''),
+('emsSupervisor',	''),
+('roadesideAssistance',	''),
