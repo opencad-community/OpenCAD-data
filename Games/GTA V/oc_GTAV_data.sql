@@ -2878,7 +2878,7 @@ INSERT INTO `<DB_PREFIX>vehicles` (`id`, `make`, `model`) VALUES
 	(523,	'Weeny',	'Dynasty'),
 	(524,	'Progen',	'Emerus'),
 	(525,	'Bravado',	'Gauntlet Classic'),
-	(526,	'Bravado',	'Gauntlet Helfire'),
+	(526,	'Bravado',	'Gauntlet Hellfire'),
 	(527,	'Annis',	'Hellion'),
 	(528,	'Weeny',	'Issy Sport'),
 	(529,	'Ocelot',	'Jugular'),
