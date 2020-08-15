@@ -2903,7 +2903,7 @@ INSERT INTO `<DB_PREFIX>vehicles` (`id`, `make`, `model`) VALUES
 	(548,	'Declasse',	'Drift Yosemite'),
 	(549,	'Nagasaki',	'Outlaw'),
 	(550,	'Karen',	'Sultan Classic'),
-	(551,	'Overlord',	'Imorgon'),
+	(551,	'Overflod',	'Imorgon'),
 	(552,	'Rune',	'Zhaba'),
 	(553,	'Dewbauchee',	'JB 700W'),
 	(554,	'Grotti',	'Furia');
