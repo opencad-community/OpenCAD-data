@@ -2866,7 +2866,13 @@ INSERT INTO `<DB_PREFIX>vehicles` (`id`, `make`, `model`) VALUES
 	(510,	'Manana',	'Custom'),
 	(511,	'Peyote',	'Custom'),
 	(512,	'Yosemite',	'Rancher'),
-	(513,	'Youga',	'Classic 4x');
+	(513,	'Youga',	'Classic 4x4')
+	(515,	'Maxwll',	'Asbo'),
+	(516,	'Lampadati',	'Komoda'),
+	(517,	'Karen',	'Everon'),
+	(518,	'Ubermacht',	'Rebla GTS'),
+	(519,	'Vapid',	'Retinue Mk II'),
+	(520,	'Maxwell',	'Vagrant');
 
 --
 -- Dumping data for table `weapons`
