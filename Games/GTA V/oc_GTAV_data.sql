@@ -2872,7 +2872,29 @@ INSERT INTO `<DB_PREFIX>vehicles` (`id`, `make`, `model`) VALUES
 	(517,	'Karen',	'Everon'),
 	(518,	'Ubermacht',	'Rebla GTS'),
 	(519,	'Vapid',	'Retinue Mk II'),
-	(520,	'Maxwell',	'Vagrant');
+	(520,	'Maxwell',	'Vagrant'),
+	(521,	'Obey',	'BF Drafter'),
+	(522,	'Vapid',	'Caracara 4x4'),
+	(523,	'Weeny',	'Dynasty'),
+	(524,	'Progen',	'Emerus'),
+	(525,	'Bravado',	'Gauntlet Classic'),
+	(526,	'Bravado',	'Gauntlet Helfire'),
+	(527,	'Annis',	'Hellion'),
+	(528,	'Weeny',	'Issy Sport'),
+	(529,	'Ocelot',	'Jugular'),
+	(530,	'Benefactor',	'Krieger'),
+	(531,	'Ocelot',	'Locust'),
+	(532,	'Vulcar',	'Nebula Turbo'),
+	(533,	'Vysser',	'Neo'),
+	(534,	'Lampadati',	'Novak'),
+	(535,	'Enus',	'Paragon R'),
+	(536,	'Enus',	'Paragon R (Armored)'),
+	(537,	'Vapid',	'Peyote Gasser'),
+	(538,	'Western',	'Rampant Rocket Tricycle'),
+	(539,	'Annis',	'S800R'),
+	(540,	'Truffade',	'Thrax'),
+	(541,	'Ubermact',	'Zion Classic'),
+	(542,	'Pegassi',	'Zorrusso');
 
 --
 -- Dumping data for table `weapons`
