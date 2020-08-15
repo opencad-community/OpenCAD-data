@@ -2894,7 +2894,19 @@ INSERT INTO `<DB_PREFIX>vehicles` (`id`, `make`, `model`) VALUES
 	(539,	'Annis',	'S800R'),
 	(540,	'Truffade',	'Thrax'),
 	(541,	'Ubermact',	'Zion Classic'),
-	(542,	'Pegassi',	'Zorrusso');
+	(542,	'Pegassi',	'Zorrusso'),
+	(543,	'Nagasaki',	'Stryder'),
+	(544,	'Progen',	'PR4'),
+	(545,	'Ocelot',	'R88'),
+	(546,	'Dinka',	'Blista Kanjo'),
+	(547,	'Dinka',	'Sungoi'),
+	(548,	'Declasse',	'Drift Yosemite'),
+	(549,	'Nagasaki',	'Outlaw'),
+	(550,	'Karen',	'Sultan Classic'),
+	(551,	'Overlord',	'Imorgon'),
+	(552,	'Rune',	'Zhaba'),
+	(553,	'Dewbauchee',	'JB 700W'),
+	(554,	'Grotti',	'Furia');
 
 --
 -- Dumping data for table `weapons`
