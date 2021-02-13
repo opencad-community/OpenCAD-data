@@ -15,9 +15,10 @@ To contribute game data either:
 
 ## Support
 
-Need Help? [View our Confluence](https://guides.opencad.io/alldoc) which has all the documentation you need.
+Need Help? [View our Documentation](https://guides.opencad.io) which has all the documentation you need.
 
-Still Having Trouble? on the community Discord post your issue in [#peer-support](https://discord.gg/ufBBmaN) In addition to the Discord support channel we urge you to [register an account on our JIRA](https://jira.opencad.io/secure/Signup!default.jspa) and [submit any issues you have there so they may be tracked](https://help.opencad.io/). If you encounter problems with registering a JIRA account please let someone in [#general](https://discord.gg/ufBBmaN) know.
+Still Having Trouble? on the community Discord post your issue in [#general-help](http://discord.io/opencadproject).
+
 
 ## License
 
