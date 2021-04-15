@@ -36,6 +36,11 @@ CREATE TABLE IF NOT EXISTS `<DB_PREFIX>warrantTypes` (
     PRIMARY KEY(`id`)
 ) ENGINE = InnoDB DEFAULT CHARSET = latin1;
 
+CREATE TABLE IF NOT EXISTS `<DB_PREFIX>patrolInformation` (
+  `key` varchar(255) NOT NULL,
+  `value` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 ROW_FORMAT=COMPACT;
+
 ALTER TABLE `<DB_PREFIX>ncic_names` CHANGE `dl_issuer` `dl_issuer` set('Government', 'Military') COLLATE 'latin1_swedish_ci' NULL AFTER `dlClass`;
 
 
