@@ -1,4 +1,9 @@
--- Last updated for OpenCAD 0.2.6
+--
+-- Last updated for OpenCAD 1.0.0
+-- Date Modified: 4/15/2021
+--
+
+
 
 CREATE TABLE IF NOT EXISTS `<DB_PREFIX>citationTypes` (
     `id` INT(11)  AUTO_INCREMENT,
@@ -7,7 +12,7 @@ CREATE TABLE IF NOT EXISTS `<DB_PREFIX>citationTypes` (
     PRIMARY KEY(`id`)
 ) ENGINE = InnoDB DEFAULT CHARSET = latin1;
 
-CREATE TABLE IF NOT EXISTS `<DB_PREFIX>incident_types` (
+CREATE TABLE IF NOT EXISTS `<DB_PREFIX>incidentTypes` (
     `id` INT(11) AUTO_INCREMENT,
     `codeId` VARCHAR(255) DEFAULT 'Radio code for given incident type.',
     `codeName` VARCHAR(255) COMMENT 'Name or description of incident.',
