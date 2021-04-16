@@ -1,3 +1,9 @@
+--
+-- 1.0.0 SQL revamp
+-- Date Modified: 4/15/2021
+--
+
+DROP TABLE IF EXISTS `<DB_PREFIX>active_users`;
 DROP TABLE IF EXISTS `<DB_PREFIX>activeUsers`;
 CREATE TABLE `<DB_PREFIX>activeUsers` (
   `identifier` varchar(255) NOT NULL,
@@ -18,7 +24,8 @@ CREATE TABLE `<DB_PREFIX>patrolInformation` (
 
 
 DROP TABLE IF EXISTS `<DB_PREFIX>bolos_persons`;
-CREATE TABLE `<DB_PREFIX>bolos_persons` (
+DROP TABLE IF EXISTS `<DB_PREFIX>bolosPersons`;
+CREATE TABLE `<DB_PREFIX>bolosPersons` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `firstName` varchar(255) NOT NULL COMMENT 'First name of BOLO suspect.',
   `lastName` varchar(255) NOT NULL COMMENT 'Last name of BOLO suspect.',
@@ -29,7 +36,7 @@ CREATE TABLE `<DB_PREFIX>bolos_persons` (
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 ROW_FORMAT=COMPACT;
 
-
+DROP TABLE IF EXISTS `<DB_PREFIX>bolos_vehicles`;
 DROP TABLE IF EXISTS `<DB_PREFIX>bolosVehicles`;
 CREATE TABLE `<DB_PREFIX>bolosVehicles` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -56,6 +63,7 @@ CREATE TABLE `<DB_PREFIX>calls` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 ROW_FORMAT=COMPACT;
 
 
+DROP TABLE IF EXISTS `<DB_PREFIX>calls_users`;
 DROP TABLE IF EXISTS `<DB_PREFIX>callsUsers`;
 CREATE TABLE `<DB_PREFIX>callsUsers` (
   `callId` int(11) NOT NULL,
@@ -66,6 +74,7 @@ CREATE TABLE `<DB_PREFIX>callsUsers` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 ROW_FORMAT=COMPACT;
 
 
+DROP TABLE IF EXISTS `<DB_PREFIX>call_history`;
 DROP TABLE IF EXISTS `<DB_PREFIX>callHistory`;
 CREATE TABLE `<DB_PREFIX>callHistory` (
   `callId` int(11) NOT NULL,
@@ -78,12 +87,14 @@ CREATE TABLE `<DB_PREFIX>callHistory` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 ROW_FORMAT=COMPACT;
 
 
+DROP TABLE IF EXISTS `<DB_PREFIX>call_list`;
 DROP TABLE IF EXISTS `<DB_PREFIX>callList`;
 CREATE TABLE `<DB_PREFIX>callList` (
   `callId` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 ROW_FORMAT=COMPACT;
 
 
+DROP TABLE IF EXISTS `<DB_PREFIX>citation_types`;
 DROP TABLE IF EXISTS `<DB_PREFIX>citationTypes`;
 CREATE TABLE `<DB_PREFIX>citationTypes` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -93,8 +104,9 @@ CREATE TABLE `<DB_PREFIX>citationTypes` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 ROW_FORMAT=COMPACT;
 
 
+DROP TABLE IF EXISTS `<DB_PREFIX>civilianNames`;
 DROP TABLE IF EXISTS `<DB_PREFIX>civilian_names`;
-CREATE TABLE `<DB_PREFIX>civilian_names` (
+CREATE TABLE `<DB_PREFIX>civilianNames` (
   `userId` int(11) NOT NULL COMMENT 'Links to users table',
   `namesId` int(11) NOT NULL COMMENT 'Links to names table'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 ROW_FORMAT=COMPACT;
