@@ -2,7 +2,7 @@
 -- Dumping data for table `colors`
 --
 
-INSERT INTO `<DB_PREFIX>colors` (`id`, `color_group`, `color_name`) VALUES
+INSERT INTO `<DB_PREFIX>colors` (`id`, `colorGroup`, `colorName`) VALUES
 (1, 'Chrome', 'Chrome'),
 (2, 'Classic', 'Black'),
 (3, 'Classic', 'Carbon Black'),
@@ -254,10 +254,10 @@ INSERT INTO `<DB_PREFIX>colors` (`id`, `color_group`, `color_name`) VALUES
 
 
 --
--- Dumping data for table `citation_types
+-- Dumping data for table `citationTypes`
 --
 
-INSERT INTO `<DB_PREFIX>citation_types` (`citation_id`, `citation_description`, `citation_fine`) VALUES
+INSERT INTO `<DB_PREFIX>citationTypes` (`citationId`, `citationDescription`, `citationFine`) VALUES
 (1, 'Felony Hit and Run','400'),
 (2, 'Hit and Run', '300'),
 (3, 'Reckless Driving', '200'),
@@ -275,7 +275,7 @@ INSERT INTO `<DB_PREFIX>citation_types` (`citation_id`, `citation_description`, 
 -- Dumping data for table `departments`
 --
 
-INSERT INTO `<DB_PREFIX>departments` (`department_id`, `department_name`, `department_short_name`, `department_long_name`, `allow_department`) VALUES
+INSERT INTO `<DB_PREFIX>departments` (`departmentId`, `departmentName`, `departmentShortName`, `departmentLongName`, `allowDepartment`) VALUES
 (1, 'Communications', 'SAECOMM', 'San Andreas Emergency Communications', 0),
 (2, 'State', 'SASP', 'San Andreas State Police', 0),
 (3, 'Highway', 'SAHP', 'San Andreas Highway Patrol', 0),
@@ -287,10 +287,10 @@ INSERT INTO `<DB_PREFIX>departments` (`department_id`, `department_name`, `depar
 (9, 'Roadside Assistance', 'SARA', 'San Andreas Roadside Assistance', 0);
 
 --
--- Dumping data for table `incident_types`
+-- Dumping data for table `incidentTypes`
 --
 
-INSERT INTO `<DB_PREFIX>incident_types` (`code_id`, `code_name`) VALUES
+INSERT INTO `<DB_PREFIX>incidentTypes` (`codeId`, `codeName`) VALUES
 ('10-0', 'Use Caution'),
 ('10-1', 'Signal Weak'),
 ('10-2', 'Signal Good'),
@@ -375,7 +375,7 @@ INSERT INTO `<DB_PREFIX>incident_types` (`code_id`, `code_name`) VALUES
 -- Dumping data for table `statuses`
 --
 
-INSERT INTO `<DB_PREFIX>statuses` (`status_id`, `status_text`) VALUES
+INSERT INTO `<DB_PREFIX>statuses` (`statusId`, `statusText`) VALUES
 (1, '10-8 | Available'),
 (2, '10-6 | Busy'),
 (3, '10-7 | Unavailable | On Call'),
@@ -2393,7 +2393,7 @@ INSERT INTO `<DB_PREFIX>vehicles` (`id`, `Make`, `Model`) VALUES
   (37, 'Benefactor', 'Feltzer'),
   (38, 'Benefactor', 'Future Shock Bruiser'),
   (39, 'Benefactor', 'Future Shock Glendale'),
-  (40, 'Benefactor', 'Glendale')
+  (40, 'Benefactor', 'Glendale'),
   (41, 'Benefactor', 'Glendale Special'),
   (42, 'Benefactor', 'Panto'),
   (43, 'Benefactor', 'Schafter'),
@@ -2892,7 +2892,7 @@ INSERT INTO `<DB_PREFIX>vehicles` (`id`, `Make`, `Model`) VALUES
 -- Dumping data for table `weapons`
 --
 
-INSERT INTO `<DB_PREFIX>weapons` (`id`, `weapon_type`, `weapon_name`) VALUES
+INSERT INTO `<DB_PREFIX>weapons` (`id`, `weaponType`, `weaponName`) VALUES
 (1, 'Vom Feuer', 'Advanced Rifle'),
 (2, 'Shrewsbury', 'Assault Rifle'),
 (3, 'Shrewsbury', 'Assault Rifle MKII'),
@@ -2983,10 +2983,10 @@ INSERT INTO `<DB_PREFIX>weapons` (`id`, `weapon_type`, `weapon_name`) VALUES
 (88, 'Throwable', 'Pipe Bomb');
 
 --
--- Dumping data into `radio_codes`
+-- Dumping data into `radioCodes`
 --
 
-INSERT INTO `<DB_PREFIX>radio_codes` (`id`, `code`, `code_description`, `onCall`) VALUES
+INSERT INTO `<DB_PREFIX>radioCodes` (`id`, `code`, `codeDescription`, `onCall`) VALUES
 (1, '10-8',			'Available', 2),
 (2, '10-6',			'Busy', 1),
 (3, '10-7C',		'Unavailable | On Call', 1),
@@ -2997,10 +2997,10 @@ INSERT INTO `<DB_PREFIX>radio_codes` (`id`, `code`, `code_description`, `onCall`
 (8, '10-65',		'Transporting Prisoner', 1);
 
 --
--- Dumping data into `warrant_types`
+-- Dumping data into `warrantTypes`
 --
 
-INSERT INTO `<DB_PREFIX>warrant_types` (`id`, `warrant_violent`, `warrant_description`) VALUES
+INSERT INTO `<DB_PREFIX>warrantTypes` (`id`, `warrantViolent`, `warrantDescription`) VALUES
 (1, '1', 'First Degree Murder'),
 (2, '1', 'Second Degree Murder'),
 (3, '1', 'Third Degree Murder'),
